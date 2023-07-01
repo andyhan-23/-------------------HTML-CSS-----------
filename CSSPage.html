@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header
+        {
+            width: 800px;
+            margin: 0 auto;
+            background: red;
+        }
+        #wrap
+        {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden; 
+        }
+        #aside
+        {
+            width:200px;
+            float:left;
+            background: blue;
+        }
+        #content
+        {
+            width: 600px;
+            float: left;
+            background: green;
+        }
+        #test
+        {
+            color: red;
+        }
+        .hello
+        {
+            color:green;
+        }
+        .me
+        {
+            background-color: red;
+        }
+        li.andy
+        {
+            color: red;
+        }
+        input[type=text]
+        {
+            background: red;
+        }
+        input[type=password]
+        {
+            background: blue;
+        }
+        #head>h1
+        {
+            color: red;
+        }
+        #section>h1
+        {
+            color: orange;
+        }
+        table>thead>tr>th
+        {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>header</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+             <h1>aside</h1>
+        </div>
+        <div id="content">
+            <h1>content</h1>
+        </div>
+    </div>
+    <div id="test">
+        <h1>hello</h1>
+    </div>
+    <div id="test">
+        <h2>hello</h2>
+    </div>
+    <div id="test">
+        <h3>hello</h3>
+    </div>
+    <div class="hello me">
+        <h1>hello me</h1>
+    </div>
+    <div>
+        <h1 class="andy">name list</h1>
+        <ul>
+            <li class="andy">andy</li>
+            <li>steve</li>
+            <li>tom</li>
+        </ul>
+    </div>
+    <div>
+        <form>
+            <input type="text"/>
+            <input type="password"/>
+        </form>
+    </div>
+    <div>
+        <div id="head">
+            <h1 class="title">andy</h1>
+            <div id="nav">
+                <h1>navigation</h1>
+            </div>
+        </div>
+        <div id="section">
+            <h1 class="title">tom</h1>
+            <p>he's my friend</p>
+        </div>
+    </div>
+    <table border="1">
+       <thead>
+            <tr>
+                <th>name</th>
+                <th>regiion</th>
+            </tr>
+       </thead>
+            <tr>
+                <td>한재혁</td>
+                <td>서울 특별시</td>
+            </tr>
+        
+    </table>
+</body>
+</html>
