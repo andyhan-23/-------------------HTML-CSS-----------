@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-child(1)
+        {
+            font-size: 100%;
+        }
+        p:nth-child(2)
+        {
+            font-size: 150%;
+        }
+        p:nth-child(3)
+        {
+            font-size: 200%;
+        }
+        #box
+        {
+            display: block;
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+            background-color: red;
+            opacity: 0.8
+        }
+        #container
+        {
+            width:100px;
+            height:100px;
+            background-color:red;
+            border: 20px solid black;
+            margin: 10px;
+            padding: 30px;
+        }
+        #container2
+        {
+            width:100px;
+            height:100px;
+            background-color:red;
+            margin:0 30px;
+            padding:0 30px;
+        }
+        #container3
+        {
+            border-width: thick;
+            border-style: dashed;
+            border-color: black;
+        }
+        #container4
+        {
+            border: thick dashed black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>naver</p>
+    <p>kakao</p>
+    <p>line</p>
+    <span>dummy</span>
+    <div id="box">
+        <p>lorem ipsum dolor sit amet</p>
+    </div>
+    <span>dummy</span>
+    <div id="container"></div>
+    <div id="container2"></div>
+    <div id="container3">
+        <h1>lorem ipsum dolot amet</h1>
+    </div>
+    <div id="container4">
+        <h1>lorem ipsum dolot amet</h1>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Property Basic</title>
+    <style>
+        div {
+            margin: 10px; padding: 10px;
+            width: 100px; height: 100px;
+            border: 10px solid black;
+        }
+        div:first-child {
+            background: red;
+            box-sizing: content-box;
+        }
+        div:last-child {
+            background: orange;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html> -->
