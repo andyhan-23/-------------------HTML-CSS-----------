@@ -6,99 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p:nth-child(1)
+        body
         {
-            font-size: 100%;
+            margin: 0 auto;
+            width:960px;
         }
-        p:nth-child(2)
+        #aside
         {
-            font-size: 150%;
+            width: 200px;
+            float: left;
         }
-        p:nth-child(3)
+        #section
         {
-            font-size: 200%;
+            width:760px;
+            float: left;
         }
-        #box
+        #wrap
         {
-            display: block;
-            width: 300px;
-            height: 50px;
-            margin: 10px;
-            background-color: red;
-            opacity: 0.8
-        }
-        #container
-        {
-            width:100px;
-            height:100px;
-            background-color:red;
-            border: 20px solid black;
-            margin: 10px;
-            padding: 30px;
-        }
-        #container2
-        {
-            width:100px;
-            height:100px;
-            background-color:red;
-            margin:0 30px;
-            padding:0 30px;
-        }
-        #container3
-        {
-            border-width: thick;
-            border-style: dashed;
-            border-color: black;
-        }
-        #container4
-        {
-            border: thick dashed black;
-            border-radius: 20px;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
-    <p>naver</p>
-    <p>kakao</p>
-    <p>line</p>
-    <span>dummy</span>
-    <div id="box">
-        <p>lorem ipsum dolor sit amet</p>
+    <div id="heaader">
+        <h1>header</h1>
     </div>
-    <span>dummy</span>
-    <div id="container"></div>
-    <div id="container2"></div>
-    <div id="container3">
-        <h1>lorem ipsum dolot amet</h1>
+    <div id="navigation">
+        <h1>navigation</h1>
     </div>
-    <div id="container4">
-        <h1>lorem ipsum dolot amet</h1>
+    <div id="wrap">
+        <div id="aside">
+            <h1>aside</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero ipsam cumque saepe tenetur amet culpa ad nam dolore officia aut, dolores sapiente deserunt molestias corrupti nemo porro. Temporibus, veritatis.</p>
+        </div>
+        <div id="section">
+            <h1>section</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sunt tenetur nostrum quisquam et! Natus quo sunt expedita non aliquam iure voluptas omnis ut, sit, quaerat voluptatibus, deserunt harum tenetur.</p>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>footer</h1>
     </div>
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>CSS3 Property Basic</title>
-    <style>
-        div {
-            margin: 10px; padding: 10px;
-            width: 100px; height: 100px;
-            border: 10px solid black;
-        }
-        div:first-child {
-            background: red;
-            box-sizing: content-box;
-        }
-        div:last-child {
-            background: orange;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
-    <div></div>
-    <div></div>
-</body>
-</html> -->
