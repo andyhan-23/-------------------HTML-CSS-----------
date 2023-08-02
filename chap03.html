@@ -6,13 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
+      #header
+      {
+        color:black;
+        background-color: red;  
+        width: 800px;  
+      }  
+      #wrap
+      {
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      #aside
+      {
+        float: left;
+        background-color: blue;
+        width: 200px;
+      }
+      #content
+      {
+        float:left;
+        background-color: green;
+        width: 600px;
+      }
+      .naver
+      {
+        color:green
+      }
+      .kakao
+      {
+        color: yellow
+      }
+      .green
+      {
+        color: red;
+      }
+      .space
+      {
+        background-color: green;
+      }
+      li.select
+      {
+        color: green;
+      }
+      input[type=text]
+      {
+        background-color: red;
+      }
+      input[type=password]
+      {
+        background-color: violet;
+      }
+      #parent h1
+      {
+        color: red;
+      }
+      #child  h1
+      {
+        color: skyblue;
+      }
+      #tom>h1
+      {
+        color: red;
+      }
+      #tom_child
+      {
+        color: green;
+      }
+      h1+h2
+      {
+        color:red;
+      }
+      h1~h2 
+      {
+        background-color: orange;
+      }
+      #click:active 
+      {
+        color:red;
+      }
+      #touch:hover
+      {
+        color:red;
+      }
+      ul
+      {
+        overflow: hidden;
+      }
+      li
+      {
+        list-style-type: none;
+        float: left;
+        padding: 15px;
+      }
+      li:first-child
+      {
+        border-radius: 10px 0px 0px 10px;
+      }
+      li:last-child
+      {
+        border-radius: 0px 10px 10px 0px;
+      }
+      li:nth-child(2n)
+      {
+        background-color: brown;
+      }
+      li:nth-child(2n+1)
+      {
+        background-color: red;
+      }
+      h1:last-of-type
+      {
+        color:red;
+      }
+      .content::first-letter
+      {
+        color: red; 
+      }
+      .content::first-line
+      {
+        background-color: gray;
+      }
+      .drag::selection
+      {
+        color:red;
+        background-color: gray;
+      }
+    </style> 
+</head>
+<body>
+    <div id="header">
+        <h1>header</h1> 
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>aside</h1>
+        </div>
+        <div id="content">
+            <h1>content</h1>
+        </div>
+    </div>
+    <ul>
+        <li class="naver">naver</li>
+        <li class="kakao">kakako</li>
+    </ul>
+    <div class="green space">
+        <h1>green space</h1>
+    </div>
+    <div class="select">
+        <ul>
+            <li class="select">naver</li>
+            <li>kakako</li>
+            <li>line</li>
+        </ul>
+    </div>
+    <input type="text" />
+    <input type="password" />
+    <div id="parent">
+        <h1>andy</h1>
+    </div>
+    <div id="child">
+        <h1>frontend-developer</h1> 
+    </div>
+    <div id="tom">
+        <h1>tom</h1>
+    </div>
+    <div id="tom_child">
+        <h1>back-end</h1>
+    </div>
+    <h1>it</h1>
+    <h2>naver</h2>
+    <h2>kakao</h2>
+    <h2>line</h2>
+    <h1 id="click">click me</h1>
+    <h1 id="touch">touch me</h1>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <h1>header1</h1>
+    <h1>header2</h2>
+    <h1>header3</h1>
+    <div class="content">
+        <p >hello my name is andy</p>
+        <p>i'm going to be frontend-developer</p>
+    </div>
+    <div>
+        <p class="drag">drag me </p>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>*:first-of-type
+        {
             color:red;
-            background-color: orange;
         }
     </style>
 </head>
 <body>
-    <h1>css</h1>
+    <h1>naver</h1>
+    <h2>kakao</h2>
+    <h3>line</h2>
+    <h1>frontend-developer</h1>
+    <h2>back-end</h2>
 </body>
-</html>
+</html> -->
