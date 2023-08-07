@@ -104,6 +104,71 @@
             width: 80px;
             float: left;
         }
+        /*내비게이션(1)*/
+        #top_gnb
+        {
+            overflow: hidden;
+            border-bottom: 1px solid black;
+            background: #B42111;
+        }
+        #top_gnb>div>a
+        {
+            /*수평 정렬*/
+            float: left;
+            width: 25%;
+
+            /*크기 및 색상, 정렬*/
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            color: white;
+        }
+        /*내비게이션(2)*/
+        #bottom_gnb
+        {
+            display: table;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        #bottom_gnb>div
+        {
+            display: table-cell;
+            position: relative;
+        }
+        #bottom_gnb>div>a
+        {
+            display: block;
+            height:35px;
+            line-height: 35px;
+            text-align: center;
+        }
+        #bottom_gnb>div>a::before
+        {
+            display: block;
+            position: absolute;
+            top:9px;
+            left:-1px;
+            width:1px;
+            height:15px;
+            border-left: 1px solid black;
+            content: ' ';
+        }
+        /*본문*/
+        #section_header
+        {
+            padding: 20px;
+        }
+        #section_article
+        {
+            padding: 10px;
+        }
+        /*푸터*/
+        #main_footer
+        {
+            padding: 10px;
+            border-top: 3px solid black;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -128,6 +193,36 @@
                 </ul>
             </div>
         </div>
+        <nav id="top_gnb">
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+        </nav>
+        <nav id="bottom_gnb">
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+        </nav>
+        <section id="main_section">
+            <header id="section_header">
+                <h1>han jae hyeok</h1>
+                <time>1999-11-23 - birthday</time>
+            </header>
+            <article id="section_article">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus possimus qui, laborum exercitationem neque rerum alias praesentium! Maiores numquam reiciendis est, deserunt velit doloremque inventore a enim harum minima explicabo.</p>
+                <br />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis, consequuntur, pariatur necessitatibus repudiandae alias amet unde quas commodi incidunt recusandae iusto! Vel, corporis atque! Voluptatum consequuntur quod nulla quisquam.</p>
+                <br />
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum est hic maxime! Beatae quos iste illum fugiat eius laudantium officia sunt quod exercitationem tempore? Doloribus, saepe! Explicabo eius amet neque!</p>
+            </article>
+        </section>
+        <footer id="main_footer">
+            <h3>HTML5+CSS3 Basic</h3>
+            <address>website sayout basic</address>
+        </footer>
     </div>
 </body>
 </html>
