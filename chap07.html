@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -181,5 +181,91 @@
         <h3>html5+css3 basic</h3>
         <address>website layout basic</address>
     </footer>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*전체 화면 적용*/
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        html,body
+        {
+            height: 100%;
+        }
+        /*고정 바 생성*/
+        #top_bar
+        {
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            height:50px;
+            background: red;
+        }
+        #bottom_bar
+        {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: red;
+        }
+        #left_bar
+        {
+            position: fixed;
+            top:50px;
+            bottom:50px;
+            left:0;
+            width:50px;
+            background: blue;
+        }
+        #right_bar
+        {
+            position: fixed;
+            top:50px;
+            bottom: 50px;
+            right:0;
+            width:50px;
+            background: blue;
+        }
+        article
+        {
+            margin-top:50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top_bar">
+        <h1>top_bar</h1>
+    </div>
+    <div id="bottom_bar">
+        <h1>bottom_bar</h1>
+    </div>
+    <div id="left_bar">
+        <h1>a</h1>
+    </div>
+    <div id="right_bar">
+        <h1>b</h1>
+    </div>
+    <article>
+        <h1>lorem ipsum dolor sit amet</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem animi, inventore dolorem a molestias necessitatibus expedita velit molestiae, eum dolore, similique sint voluptates! Necessitatibus rem eligendi itaque voluptatibus eaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nostrum perspiciatis, debitis sint ipsum animi numquam tempora! Aut modi sit voluptatum blanditiis iure cum neque doloribus ducimus fugit? Aspernatur, magni.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus deleniti perspiciatis neque, eligendi eius harum minus. Quis quasi ex, earum fugit perspiciatis accusantium, recusandae officiis sapiente quibusdam suscipit natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sunt. Deleniti recusandae dolores impedit facilis accusamus consequatur, officia, debitis incidunt tenetur, omnis nostrum voluptas expedita? Sit molestiae mollitia est non.</p>
+    </article>
 </body>
 </html>
